@@ -1,0 +1,7 @@
+# Cópias de segurança baixadas pelo app: têm dados das clientes e não devem ir para o GitHub
+michelle-farias-plano-b-*.json
+*.csv
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
