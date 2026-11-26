@@ -29,7 +29,7 @@
     sub: "Piercing",
     zap: "",
     insta: "",
-    meta: 10,
+    meta: 8,
     premio: "1 aplicação grátis",
     modo: "atend",
     porValor: 100,
@@ -176,7 +176,8 @@
   const get = (c, id) => S[c].find((x) => x.id === id);
   const cfg = () => {
     const c = { ...DEF, ...(get("config", "estudio") || {}) };
-    c.meta = Math.min(20, Math.max(3, Math.round(num(c.meta)) || 10));
+    if (num(c.meta) === 10) c.meta = 8;
+    c.meta = Math.min(20, Math.max(3, Math.round(num(c.meta)) || 8));
     return c;
   };
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -2357,7 +2358,7 @@ ${ex ? `<p class="sub">Ainda há ${h(pl(ex, "registro de exemplo", "registros de
         sub: g("sub"),
         zap: g("zap").replace(/\D/g, ""),
         insta: g("insta"),
-        meta: Math.min(20, Math.max(3, Math.round(num(g("meta"))) || 10)),
+        meta: Math.min(20, Math.max(3, Math.round(num(g("meta"))) || 8)),
         modo: g("modo") === "valor" ? "valor" : "atend",
         porValor: Math.max(1, num(g("porValor")) || 100),
         premio: g("premio") || DEF.premio,
@@ -2535,3 +2536,7 @@ ${ex ? `<p class="sub">Ainda há ${h(pl(ex, "registro de exemplo", "registros de
     }, 10000);
   })();
 }
+
+
+
+

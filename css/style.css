@@ -10,20 +10,20 @@
    TYPE    Cormorant Garamond for titles and figures, Jost for the interface, Allura only for the name
    LAYOUT  laptop: slim header with text tabs, two calm columns; phone: one column, tabs at the bottom, Atender button */
 :root {
-  color-scheme: light;
-  --bg: #ede3e3;
-  --card: #ffffff;
+  color-scheme: dark;
+  --bg: #211a1d;
+  --card: #30262a;
   --paper: #f8f3f2;
-  --ink: #60412f;
-  --mute: #7a5847;
-  --line: #d7c5c1;
-  --tint: #e2d4d1;
-  --pri: #60412f;
-  --on: #f8f3f2;
-  --bad: #a8414f;
-  --mid: #875722;
-  --blush: #cd7787;
-  --rose: #bda197;
+  --ink: #f3e9e7;
+  --mute: #c4aaa7;
+  --line: #59474d;
+  --tint: #403238;
+  --pri: #cd7787;
+  --on: #211a1d;
+  --bad: #f08b98;
+  --mid: #e4b66e;
+  --blush: #e18a9b;
+  --rose: #c6a39a;
   --serif: "Cormorant Garamond", Georgia, serif;
   --script: Allura, "Brush Script MT", cursive;
   --sans: Jost, "Segoe UI", system-ui, sans-serif;
